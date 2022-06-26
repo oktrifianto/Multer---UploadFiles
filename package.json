@@ -1,0 +1,24 @@
+{
+  "name": "multerexample",
+  "version": "1.0.0",
+  "description": "Upload Files Using Node.js + Express + Multer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oktrifianto/Multer---UploadFiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oktrifianto/Multer---UploadFiles/issues"
+  },
+  "homepage": "https://github.com/oktrifianto/Multer---UploadFiles#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
