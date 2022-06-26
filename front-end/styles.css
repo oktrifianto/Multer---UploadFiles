@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(142, 154, 154);
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+}
+.container h2 {
+  text-align: center;
+  color: white;
+}
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+form .input-group {
+  margin-bottom: 15px;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+form input {
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.submit {
+  width: 100%;
+  border: none;
+  background: rgb(162, 70, 8);
+  font-size: 18px;
+  color: white;
+  border-radius: 3px;
+  padding: 20px;
+  text-align: center;
+}
