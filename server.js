@@ -1,4 +1,6 @@
-const express = require('express');
+const express     = require('express');
+const multer      = require('multer');
+const uploadImage = multer({dest: "uploads/"});
 
 const app = express();
 app.use(express.json());
@@ -11,8 +13,12 @@ app.get("/", (req, res) => {
   });
 });
 
-app.post('/upload', (req, res) => {
-  console.log(req.body); // {}
+app.post('/upload', uploadImage.array("files"), (req, res) => {
+  console.log(req.body.name); // {}
+  console.log(req.files);
+  res.json({
+    message: "Success uploaded files"
+  });
 });
 
 app.listen(3000, () => console.log(`Server running!`));
