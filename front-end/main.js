@@ -14,10 +14,7 @@ function submitData(e){
 
 	fetch(`${server}/upload`, {
 		method: 'POST',
-		body: formData,
-		headers: {
-			"Content-Type": "multipart/form-data"
-		}
+		body: formData
 	})
 	.then((res) => console.log(res))
 	.catch((err) => ("Something error", err));
