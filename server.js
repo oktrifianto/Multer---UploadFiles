@@ -1,6 +1,5 @@
 const express     = require('express');
-const multer      = require('multer');
-const uploadImage = multer({dest: "uploads/"});
+const uploadImage = require('./config/multer.config');
 
 const app = express();
 app.use(express.json());
