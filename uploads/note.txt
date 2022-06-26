@@ -1,1 +1,19 @@
 # stored uploaded files here #
+
+------------------------
+example log success
+when image uploaded
+------------------------
+
+[
+  {
+    fieldname: 'files',
+    originalname: 'your-image.jpg',
+    encoding: '7bit',
+    mimetype: 'image/jpeg',
+    destination: 'uploads/',
+    filename: '69194215f5b57c2b58c402bae7a8f7aa',
+    path: 'uploads/69194215f5b57c2b58c402bae7a8f7aa',
+    size: 44057
+  }
+]
