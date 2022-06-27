@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "back-end": "nodemon server.js",
+    "front-end": "http-server front-end -o",
+    "dev": "concurrently \"npm run back-end\" \"npm run front-end\""
   },
   "repository": {
     "type": "git",
