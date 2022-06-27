@@ -1,7 +1,9 @@
 const express     = require('express');
+const cors        = require('cors');
 const uploadImage = require('./config/multer.config');
 
 const app = express();
+app.use(cors()); // enable cors for all routes
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
