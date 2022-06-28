@@ -3,13 +3,14 @@
  * --------------------------
  */
 const multer      = require('multer');
+const date        = require('../services/DateForImageName');
 
 const MyStorage = multer.diskStorage({
   destination: function(req, file, callback) {
     callback(null, 'uploads/');
   },
   filename: function(req, file, callback){
-    callback(null, Date.now() + '-' + req.body.name + '.jpg');
+    callback(null, date + '---' + req.body.name + '.jpg');
   }
 });
 
