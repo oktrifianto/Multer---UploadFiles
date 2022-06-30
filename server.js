@@ -15,10 +15,10 @@ app.get("/", (req, res) => {
 });
 
 app.post('/upload', uploadImage.array("files"), (req, res) => {
-  console.log(req.body.name); // {}
-  console.log(req.files);
   res.json({
-    message: "Success uploaded files"
+    message : "Success uploaded files",
+    data    : req.files,
+    error   : []
   });
 });
 
