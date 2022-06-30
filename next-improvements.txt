@@ -1,0 +1,9 @@
+// ---------- Todo Next Improvements ----------- //
+
+(√) 0. uploaded image with jpg name 
+(√) 1. remove whitespace in file name 
+(√) 2. refactor multer in another configuration file 
+3. print size file
+(√) 4. date time in image name 
+5. duplicate name? ... + number?
+--------------------------------------------
