@@ -16,6 +16,13 @@ function submitData(e){
 		method: 'POST',
 		body: formData
 	})
-	.then((res) => console.log(res))
+	.then(response => response.json())
+	.then(result => {
+		// console.log(res);
+		// console.log(res.data.length); // more than 0 == exist image
+		if (result.data.length > 0) {
+			console.log('Upload image success');
+		}
+	})
 	.catch((err) => ("Something error", err));
 }
